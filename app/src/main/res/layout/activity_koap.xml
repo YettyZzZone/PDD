@@ -1,0 +1,30 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff">
+        <TableLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1"
+            android:stretchColumns="1"
+            android:id="@+id/table">
+            <TableRow android:id="@+id/header"
+                android:padding="5dp"
+                android:background="#ccc">
+                <TextView android:text="Статья КоАП РФ"
+                    />
+                <TextView android:text="Правонарушение"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    />
+                <TextView android:text="Санкции/меры"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="0dp"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
