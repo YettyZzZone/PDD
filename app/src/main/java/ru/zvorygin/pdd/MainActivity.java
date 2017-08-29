@@ -51,10 +51,11 @@ public class MainActivity extends AppCompatActivity
 
         fragmentPDD = new FragmentPDD();
         fragmentKOAP = new FragmentKoap();
-//        fTrans = getSupportFragmentManager().beginTransaction();
-//        //!БАГ! ИСПРАВИТЬ!
-//        fTrans.add(R.id.container, fragmentPDD);
-//        fTrans.commit();
+        fTrans = getSupportFragmentManager().beginTransaction();
+        if (fTrans.isEmpty()){
+            fTrans.add(R.id.container, fragmentPDD);
+        }
+        fTrans.commit();
     }
 
     @Override
